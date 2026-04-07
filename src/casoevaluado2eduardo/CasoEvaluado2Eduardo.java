@@ -15,7 +15,7 @@ public class CasoEvaluado2Eduardo {
         Dungeon dungeon = new Dungeon(3, 3);
         
         // Colocar objetos en el mapa
-        dungeon.colocarObjeto(0, 1, new Objeto("Poción", "poción", 10));
+        dungeon.colocarObjeto(0, 1, new Objeto("Pocion", "pocion", 10));
         dungeon.colocarObjeto(1, 2, new Objeto("Pan", "comida", 5));
         dungeon.colocarObjeto(2, 2, new Objeto("Anillo", "artefacto", 20));
         dungeon.colocarObjeto(2, 0, new Objeto("Espada", "artefacto", 15));
@@ -24,7 +24,7 @@ public class CasoEvaluado2Eduardo {
         // Crear jugador
         Jugador jugador = new Jugador(0, 0, "Jugador1");
         
-        System.out.println("🎮 ¡BIENVENIDO AL DUNGEON!");
+        System.out.println("🎮 !BIENVENIDO AL DUNGEON!");
         System.out.println("Objetivo: Recoge todos los objetos que puedas.");
         System.out.println("Controles: W=Arriba, S=Abajo, A=Izquierda, D=Derecha, Q=Salir");
         System.out.println("================================================");
@@ -40,7 +40,7 @@ public class CasoEvaluado2Eduardo {
             
             if (input.equals("Q")) {
                 jugando = false;
-                System.out.println("🏁 ¡Juego terminado por el jugador!");
+                System.out.println("🏁 !Juego terminado por el jugador!");
                 break;
             }
             
@@ -52,7 +52,7 @@ public class CasoEvaluado2Eduardo {
                 case "A": direccion = Direccion.IZQUIERDA; break;
                 case "D": direccion = Direccion.DERECHA; break;
                 default:
-                    System.out.println("❌ Tecla inválida. Usa W/A/S/D para moverte o Q para salir.");
+                    System.out.println("❌ Tecla invalida. Usa W/A/S/D para moverte o Q para salir.");
                     continue;
             }
             
@@ -65,7 +65,7 @@ public class CasoEvaluado2Eduardo {
             // Mostrar inventario actual
             System.out.println("\n📦 Inventario actual:");
             System.out.println("Movimientos: " + (jugador.getInventario().getObjetos().size() > 0 ? 
-                "Total acumulado: " + jugador.getInventario().getTotal() : "Sin objetos aún"));
+                "Total acumulado: " + jugador.getInventario().getTotal() : "Sin objetos aun"));
         }
         
         // Mostrar reporte final

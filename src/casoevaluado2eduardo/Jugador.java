@@ -36,13 +36,13 @@ public class Jugador {
 
             if (obj != null) {
                 inventario.agregarObjeto(obj);
-                System.out.println("¡Recolectado: " + obj.getNombre() + " (valor: " + obj.getValor() + ")");
+                System.out.println("!Recolectado: " + obj.getNombre() + " (valor: " + obj.getValor() + ")");
             } else {
-                System.out.println("Celda vacía.");
+                System.out.println("Celda vacia.");
             }
 
         } else {
-            System.out.println("❌ Movimiento inválido - Sales de los límites del mapa.");
+            System.out.println("❌ Movimiento invalido - Te sales de los limites de la matriz.");
         }
     }
 

@@ -37,6 +37,6 @@ public class Dungeon {
             }
             System.out.println();
         }
-        System.out.println("[J] = Jugador, [O] = Objeto, [ ] = Vacío");
+        System.out.println("[J] = Jugador, [O] = Objeto, [ ] = Vacio");
     }
 }
