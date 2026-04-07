@@ -58,6 +58,13 @@ public class CasoEvaluado2Eduardo {
             // Mostrar mapa actualizado
             dungeon.mostrarMapa(jugador.getFila(), jugador.getColumna());
             
+            // Verificar si se recolectaron todos los objetos
+            if (!dungeon.hayObjetosRestantes()) {
+                System.out.println("\n🎉 !FELICIDADES! Has recolectado todos los objetos!");
+                jugando = false;
+                break;
+            }
+            
             // Mostrar inventario actual
             System.out.println("\n📦 Inventario actual:");
             System.out.println("Movimientos: " + (jugador.getInventario().getObjetos().size() > 0 ? 
