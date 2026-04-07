@@ -37,6 +37,7 @@ public class Jugador {
             if (obj != null) {
                 inventario.agregarObjeto(obj);
                 System.out.println("!Recolectado: " + obj.getNombre() + " (valor: " + obj.getValor() + ")");
+                dungeon.removerObjeto(fila, columna); // El objeto desaparece del mapa
             } else {
                 System.out.println("Celda vacia.");
             }

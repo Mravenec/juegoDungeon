@@ -14,12 +14,8 @@ public class CasoEvaluado2Eduardo {
         // Crear el dungeon
         Dungeon dungeon = new Dungeon(3, 3);
         
-        // Colocar objetos en el mapa
-        dungeon.colocarObjeto(0, 1, new Objeto("Pocion", "pocion", 10));
-        dungeon.colocarObjeto(1, 2, new Objeto("Pan", "comida", 5));
-        dungeon.colocarObjeto(2, 2, new Objeto("Anillo", "artefacto", 20));
-        dungeon.colocarObjeto(2, 0, new Objeto("Espada", "artefacto", 15));
-        dungeon.colocarObjeto(1, 0, new Objeto("Manzana", "comida", 3));
+        // Colocar objetos al azar en el mapa
+        dungeon.colocarObjetosAlAzar();
         
         // Crear jugador
         Jugador jugador = new Jugador(0, 0, "Jugador1");
