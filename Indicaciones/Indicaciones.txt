@@ -1,0 +1,60 @@
+Una empresa desarrolladora de videojuegos desea crear un sistema en Java para gestionar las acciones de un jugador dentro de una mazmorra representada por una matriz.
+
+El jugador se desplaza dentro de un mapa bidimensional donde en cada celda puede encontrar distintos tipos de objetos consumibles, como pociones, comida o artefactos mágicos. A medida que el jugador avanza, recolecta objetos y los almacena en su inventario, acumulando un valor total.
+
+**Requerimientos Técnicos**
+
+* **Objeto**
+
+  * Atributos:
+
+    * nombre
+    * tipo (poción, comida, artefacto)
+    * valor
+
+* **Inventario**
+
+  * Atributos:
+
+    * idJugador
+    * lista de objetos recolectados
+    * total, acumulado
+
+**Funcionalidad**
+
+El sistema debe permitir:
+
+* Generar un mapa del Dungeon representado como una matriz de al menos 3x3.
+* Registrar los objetos disponibles en el juego.
+* Permitir el movimiento del jugador mediante una lista de direcciones (ARRIBA, ABAJO, IZQUIERDA, DERECHA).
+* Recorrer la matriz según los movimientos.
+* Recolectar objetos encontrados en el recorrido.
+* Calcular el total acumulado sumando los valores de los objetos.
+* Generar un reporte final con:
+
+  * Objetos recolectados
+  * Total, acumulado
+  * Número de movimientos realizados
+
+**Validaciones**
+
+* Validar que el jugador no salga de los límites de la matriz.
+* Verificar que los objetos existan antes de agregarlos.
+* Controlar el caso en que no se recolecten objetos.
+
+
+**Rúbrica de Evaluación**
+
+| Criterio                            | Excelente (2 pts.)                                                                                   | Satisfactorio (1 pt.)                                                      | Deficiente (0 pts.)                                | Calificación |
+| ----------------------------------- | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------- | ------------ |
+| Definición de clases                | Implementa correctamente las clases Objeto e Inventario con todos sus atributos y responsabilidades. | Implementa las clases, pero con errores menores en atributos o estructura. | No implementa correctamente las clases requeridas. |              |
+| Constructores                       | Inicializa correctamente los objetos mediante constructores adecuados.                               | Implementa constructores, pero con errores de inicialización.              | No implementa constructores o son incorrectos.     |              |
+| Encapsulamiento                     | Usa correctamente atributos privados, getters y setters.                                             | Usa encapsulamiento parcialmente o con errores.                            | No aplica encapsulamiento.                         |              |
+| Uso de matriz (mapa)                | Implementa correctamente la matriz del dungeon y su uso en la lógica del juego.                      | Implementa la matriz, pero con errores en su uso.                          | No implementa correctamente la matriz.             |              |
+| Uso de lista/arreglo de movimientos | Gestiona correctamente los movimientos del jugador mediante lista/arreglo.                           | Implementa los movimientos, pero con errores en la lógica.                 | No implementa correctamente los movimientos.       |              |
+| Recolección de objetos              | Agrega correctamente los objetos encontrados al inventario.                                          | Recolecta objetos con errores parciales.                                   | No implementa correctamente la recolección.        |              |
+| Cálculo del total                   | Calcula correctamente el valor total acumulado.                                                      | Calcula el total con errores menores.                                      | No calcula correctamente el total.                 |              |
+| Validaciones                        | Implementa correctamente validaciones de límites y existencia de objetos.                            | Implementa validaciones parciales.                                         | No implementa validaciones.                        |              |
+| Reporte final                       | Presenta un reporte claro y completo del resultado del juego.                                        | Presenta reporte con información incompleta.                               | No presenta reporte o es incorrecto.               |              |
+| Calidad del código                  | Código claro, ordenado, modular y fácil de entender.                                                 | Código funcional con organización básica.                                  | Código desordenado o difícil de entender.          |              |
+
